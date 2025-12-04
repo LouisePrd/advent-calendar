@@ -1,0 +1,167 @@
+html {
+    background-color: #2C3923;
+}
+
+.day1, .day2, .day3, .day4{
+    height: 100%;
+        background:
+        radial-gradient(circle at top center, rgba(255, 255, 255, 0.05), transparent 70%),
+        linear-gradient(150deg, #2C3923 0%, #1e2a18 50%, #10150d 100%);
+    background-attachment: fixed;
+}
+
+h1 {
+    color: #FFFFFF;
+    text-align: center;
+    font-family: "p22-yule-heavy-snow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 50px;
+    font-size: 3rem;
+}
+
+p {
+    color: #FFFFFF;
+    text-align: center;
+    font-family: "p22-yule-heavy-snow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+}
+
+.video-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.video {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 15px;
+    border: 3px solid #ffffff;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    margin-top: 20px;
+}
+
+.game-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.controls {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+}
+
+button {
+    font-weight: bold;
+    margin-top: 15px;
+    background-color: #91191B;
+    background: linear-gradient(145deg, #c93030, #91191B);
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+button:hover {
+    background-color: #b22224;
+    background: linear-gradient(145deg, #ff4b4b, #b22224);
+  transform: scale(1.05);
+}
+
+canvas {
+    border: 3px solid #910202;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    margin-top: 50px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+#logo-footer {
+    position: fixed;
+    bottom: -80px;
+    left: 10px;
+    width: 100px;
+    cursor: pointer;
+}
+
+#logo-footer:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
+
+
+.day2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://img.freepik.com/vecteurs-libre/fond-hiver-non-localise-flocons-neige_1393-271.jpg?semt=ais_hybrid&w=740&q=80') center/cover no-repeat;
+    opacity: 0.1;
+    pointer-events: none;
+    z-index: 0;
+}
+
+#buttons {
+    margin-top: 20px;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    display: flex;
+    gap: 20px;
+}
+
+#buttons button {
+    margin: 0;
+}
+
+#scene-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -30px;
+}
+
+#description {
+    margin-bottom: 0;
+    font-size: 1.2rem;
+}
+
+#grid-photos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    max-width: 1200px;
+    margin:20px auto;
+}
+
+#grid-photos .photo {
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.photo:hover {
+    transform: scale(1.05);
+}
