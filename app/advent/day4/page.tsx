@@ -40,7 +40,7 @@ export default function Day4() {
         <h1>Jour 4 🎄</h1>
       </header>
 
-      <p>Rare footage de nos ancêtres aujourd'hui #nostalgie</p>
+      <p>Aujourd'hui, rares footages de nos ancêtres #nostalgie</p>
 
       <div id="grid-photos">
         {photos.map((photo, i) => (
