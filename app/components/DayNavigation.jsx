@@ -39,6 +39,13 @@ export default function DayNavigation() {
 
       <button
         className="day-nav-btn"
+        onClick={() => router.push("/")}
+      >
+        Accueil
+      </button>
+
+      <button
+        className="day-nav-btn"
         onClick={() => goToDay(currentDay + 1)}
       >
         Jour suivant ↱
