@@ -33,7 +33,7 @@ p {
     font-size: 1rem;
 }
 
-.video-wrapper {
+#video-wrapper {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -148,7 +148,6 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -10px;
 }
 
 #description {

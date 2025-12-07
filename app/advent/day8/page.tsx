@@ -27,6 +27,13 @@ export default function Day8() {
 
       if (month !== 11 || date < unlockDay) {
         alert(`Jour ${unlockDay} non disponible !`);
+        document.body.innerHTML = `
+        <header class="header">
+          <h1>Accès verrouillé</h1>
+        </header>
+        <main class="card">
+          <p>Tssss arrête de tricher... #nerd </p>
+        </main>`;
         return;
       }
 

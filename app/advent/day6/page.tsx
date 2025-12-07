@@ -24,8 +24,8 @@ export default function Day6() {
     const container = document.getElementById("scene-container");
     if (!container) return;
 
-    const width = container.clientWidth;
-    const height = container.clientHeight;
+    const width = container.clientWidth - 50;
+    const height = container.clientHeight - 50;
 
     // SCENE
     const scene = new THREE.Scene();
@@ -171,7 +171,7 @@ export default function Day6() {
 
     // RESIZE
     const handleResize = () => {
-      const w = container.clientWidth;
+      const w = container.clientWidth - 50;
       const h = container.clientHeight;
       camera.aspect = w / h;
       camera.updateProjectionMatrix();

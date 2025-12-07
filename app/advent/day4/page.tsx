@@ -18,7 +18,7 @@ export default function Day4() {
           <h1>Accès verrouillé</h1>
         </header>
         <main class="card">
-          <p>Tssss arrête de tricher petit malin... #nerd😎</p>
+          <p>Tssss arrête de tricher... #nerd </p>
         </main>`;
     }
   }, []);

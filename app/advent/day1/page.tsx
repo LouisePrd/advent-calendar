@@ -27,7 +27,7 @@ export default function Day1() {
           <h1>Accès verrouillé</h1>
         </header>
         <main className="card">
-          <p>Tssss arrête de tricher petit malin... #nerd😎</p>
+          <p>Tssss arrête de tricher... #nerd </p>
         </main>
       </>
     );
@@ -42,13 +42,10 @@ export default function Day1() {
 
       <main className="card fade-in">
         <p>
-          C&apos;est le premier jour (même si t&apos;as déjà vu un début sur mon
-          PC oups)
-          <br />
-          Voici la petite vidéo douteuse du jour :
+          Premier jour de ce calendrier qui s'annonce bien douteux !
         </p>
 
-        <div className="video-wrapper">
+        <div id="video-wrapper">
           <video controls className="video">
             <source src="/videos/jour1.mp4" type="video/mp4" />
           </video>
