@@ -202,3 +202,39 @@ canvas {
     animation: shake-scale 0.6s;
     cursor: pointer;
 }
+
+#mugshot {
+    display: block;
+    margin: 20px auto;
+    margin-top: 35px;
+    max-width: 1600px;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+#mugshot:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+#logo-footer-7-left {
+    position: fixed;
+    bottom: 0px;
+    left: 10px;
+    width: 100px;
+    cursor: pointer;
+}
+
+#logo-footer-7-right {
+    position: fixed;
+    bottom: 0px;
+    right: 10px;
+    width: 100px;
+    cursor: pointer;
+}
+
+#logo-footer-7-left:hover, #logo-footer-7-right:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}

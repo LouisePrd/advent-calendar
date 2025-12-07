@@ -7,7 +7,7 @@ import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import gsap from "gsap";
 import "../../styles/styles-jours.css";
 
-export default function Day3() {
+export default function Day6() {
   useEffect(() => {
     const today = new Date();
     const month = today.getMonth();
