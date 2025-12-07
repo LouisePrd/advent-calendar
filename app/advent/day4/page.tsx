@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import BackHome from "../../components/DayNavigation";
 import "../../styles/styles-jours.css";
 
 export default function Day4() {
@@ -36,6 +37,7 @@ export default function Day4() {
 
   return (
     <div>
+      <BackHome />
       <header className="header">
         <h1>Jour 4 🎄</h1>
       </header>

@@ -5,6 +5,7 @@ import * as THREE from "three";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import gsap from "gsap";
+import BackHome from "../../components/DayNavigation";
 import "../../styles/styles-jours.css";
 
 export default function Day3() {
@@ -229,6 +230,7 @@ export default function Day3() {
 
   return (
     <div>
+      <BackHome />
       <header className="header">
         <h1>Jour 3 🎄</h1>
       </header>
