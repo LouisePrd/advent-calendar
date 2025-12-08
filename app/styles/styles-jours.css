@@ -2,18 +2,6 @@ html {
     background-color: #2C3923;
 }
 
-.day1,
-.day2,
-.day3,
-.day4,
-.day5 {
-    height: 100%;
-    background:
-        radial-gradient(circle at top center, rgba(255, 255, 255, 0.05), transparent 70%),
-        linear-gradient(150deg, #2C3923 0%, #1e2a18 50%, #10150d 100%);
-    background-attachment: fixed;
-}
-
 h1 {
     color: #FFFFFF;
     text-align: center;
@@ -354,4 +342,116 @@ button:hover {
     flex-direction: row;
     align-items: center;
     gap: 20px;
+}
+
+.fact {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    border: 2px solid #FFFFFF;
+    padding: 15px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+}
+
+.again-button {
+    font-weight: bold;
+    background-color: #14482d;
+    background: linear-gradient(145deg, #1e3a1f, #14482d);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid #0f2d1b;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 30px;
+    font-size: 1rem;
+}
+
+.again-button:hover {
+    background-color: #1e3a1f;
+    background: linear-gradient(145deg, #27632b, #1e3a1f);
+    transform: scale(1.05);
+}
+
+.footer9 {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer9 img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+.footer9 img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
+
+.nerd-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.nerd-popup-content {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  animation: pop 0.3s ease-out;
+  font-family: "p22-yule-heavy-snow", sans-serif;
+}
+
+@keyframes pop {
+  from { transform: scale(0.7); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.close-btn {
+  margin-top: 15px;
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+.nerd-cat {
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+
+.nerd-cat:hover {
+  transform: scale(1.05);
+}
+
+.video-container {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 100%;
+  height: 400px;
 }
