@@ -209,46 +209,56 @@ export default function Day2() {
       );
     }
 
-    function render() {
-      if (!ctx) return;
+function render() {
+  if (!ctx) return;
 
-      ctx.fillStyle = "#b1d9ffff";
-      ctx.fillRect(0, 0, W, H);
+  // fond
+  ctx.fillStyle = "#b1d9ffff";
+  ctx.fillRect(0, 0, W, H);
 
-      ctx.fillStyle = "#07220bff";
-      ctx.fillRect(0, groundY, W, H - groundY);
+  // sol
+  ctx.fillStyle = "#07220bff";
+  ctx.fillRect(0, groundY, W, H - groundY);
 
-      ctx.save();
-      ctx.fillStyle = "#082e16ff";
-      for (const ob of obstacles) {
-        ctx.fillRect(Math.round(ob.x), Math.round(ob.y), ob.w, ob.h);
-        ctx.strokeRect(Math.round(ob.x), Math.round(ob.y), ob.w, ob.h);
-      }
-      ctx.restore();
+  // obstacles
+  ctx.save();
+  ctx.fillStyle = "#082e16ff";
+  for (const ob of obstacles) {
+    ctx.fillRect(Math.round(ob.x), Math.round(ob.y), ob.w, ob.h);
+    ctx.strokeRect(Math.round(ob.x), Math.round(ob.y), ob.w, ob.h);
+  }
+  ctx.restore();
 
-      if (dinoSprite.complete) {
-        ctx.save();
-        ctx.translate(dino.x, 0);
-        const dh = dino.ducking ? dino.h * 0.55 : dino.h;
-        const visualScale = 0.16;
-        const drawW = FRAME_W * visualScale;
-        const drawH = FRAME_H * visualScale;
-        const duckOffset = dino.ducking ? 25 : 0;
-        const spriteY = dino.y - drawH + dh + duckOffset;
-        ctx.drawImage(
-          dinoSprite,
-          dino.frame * FRAME_W,
-          0,
-          FRAME_W,
-          FRAME_H,
-          -drawW / 2,
-          spriteY,
-          drawW,
-          drawH
-        );
-        ctx.restore();
-      }
-    }
+  // dino
+  if (dinoSprite.complete) {
+    ctx.save();
+    ctx.translate(dino.x, 0);
+    const dh = dino.ducking ? dino.h * 0.55 : dino.h;
+    const visualScale = 0.16;
+    const drawW = FRAME_W * visualScale;
+    const drawH = FRAME_H * visualScale;
+    const duckOffset = dino.ducking ? 25 : 0;
+    const spriteY = dino.y - drawH + dh + duckOffset;
+    ctx.drawImage(
+      dinoSprite,
+      dino.frame * FRAME_W,
+      0,
+      FRAME_W,
+      FRAME_H,
+      -drawW / 2,
+      spriteY,
+      drawW,
+      drawH
+    );
+    ctx.restore();
+  }
+
+  ctx.fillStyle = "rgba(42, 5, 5, 1)"; 
+  ctx.font = "24px sans-serif";
+  ctx.fillText(`Score: ${score}`, 20, 30);
+}
+
+
 
     function fitCanvas() {
       if (!canvas) return;
