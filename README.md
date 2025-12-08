@@ -11,6 +11,7 @@ Un [calendrier interactif](https://calendalex.netlify.app/) en ligne avec des ca
 - React : composants et gestion de l’état
 - Three.js : animations 3D
 - @mediapipe/tasks-vision pour les interactions basées sur les gestes
+- API [Useless Facts](https://uselessfacts.jsph.pl/)
 
 ## Organisation du projet
 - pages/ : pages des jours et page principale du calendrier
