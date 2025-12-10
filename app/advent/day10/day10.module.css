@@ -2,7 +2,7 @@
   position: relative;
   width: 200px;
   height: 200px;
-  margin: 90px auto 0;
+  margin: 70px auto 0;
   cursor: pointer;
   user-select: none;
 }
@@ -19,14 +19,17 @@
 
 .ribbon {
   position: absolute;
-  width: 40px;
-  height: 150px;
+  width: 35px;
+  height: 120px;
   background: rgb(194, 10, 87);
   left: 80px;
   top: 0;
   border-radius: 4px;
   transition: all 0.5s ease;
   z-index: 3;
+  border-left: 5px solid #ffffff;
+  border-right: 5px solid #ffffff;
+  border-bottom: 5px solid #ffffff;
 }
 
 .ribbonOff {
@@ -52,12 +55,18 @@
 
 .giftContent {
   position: absolute;
-  top: -60px;
+  top: -40px;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
   animation: pop 0.5s ease;
   z-index: 4;
+}
+
+.giftContent p {
+  margin: 0;
+  padding: 0;
+  padding-top: 5px;
 }
 
 @keyframes pop {
